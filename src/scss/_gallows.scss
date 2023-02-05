@@ -4,28 +4,28 @@
   position: relative;
 
   &__bottom {
-    height: 10px;
-    width: 250px;
+    height: 0.5vw;
+    width: 12vw;
     background: $primary;
   }
 
   &__stand {
-    height: 400px;
-    width: 10px;
+    height: 15vw;
+    width: 0.5vw;
     background: $primary;
-    margin-left: 120px;
+    margin-left: 6vw;
   }
 
   &__top {
-    height: 10px;
-    width: 200px;
+    height: 0.5vw;
+    width: 8vw;
     background: $primary;
-    margin-left: 120px;
+    margin-left: 6vw;
   }
 
   &__hang {
-    height: 50px;
-    width: 10px;
+    height: 3vw;
+    width: 0.5vw;
     background: $primary;
     position: absolute;
     top: 0;
@@ -33,13 +33,13 @@
   }
 
   &__hangman-head {
-    width: 50px;
-    height: 50px;
+    width: 2vw;
+    height: 2vw;
     border-radius: 100%;
-    border: 10px solid $secondary;
+    border: 0.5vw solid $secondary;
     position: absolute;
-    top: 50px;
-    right: -20px;
+    top: 3vw;
+    right: -0.75vw;
   }
 
   &__hangman {
@@ -48,48 +48,48 @@
 
     &-body {
       @extend .gallows__hangman;
-      width: 10px;
-      height: 100px;
-      top: 90px;
+      width: 0.5vw;
+      height: 4vw;
+      top: 5vw;
       right: 0;
     }
 
     &-arm-right {
       @extend .gallows__hangman;
-      width: 70px;
-      height: 10px;
-      top: 110px;
-      right: -70px;
+      width: 3vw;
+      height: 0.5vw;
+      top: 5.5vw;
+      right: -3vw;
       rotate: 35deg;
       transform-origin: left top;
     }
 
     &-arm-left {
       @extend .gallows__hangman;
-      width: 70px;
-      height: 10px;
-      top: 107px;
-      right: 6px;
+      width: 3vw;
+      height: 0.5vw;
+      top: 5.5vw;
+      right: 0.5vw;
       rotate: -35deg;
       transform-origin: right top;
     }
 
     &-leg-right {
       @extend .gallows__hangman;
-      width: 100px;
-      height: 10px;
-      top: 185px;
-      right: -100px;
+      width: 5vw;
+      height: 0.5vw;
+      top: 8.5vw;
+      right: -5vw;
       rotate: 60deg;
       transform-origin: left top;
     }
 
     &-leg-left {
       @extend .gallows__hangman;
-      width: 100px;
-      height: 10px;
-      top: 185px;
-      right: 10px;
+      width: 5vw;
+      height: 0.5vw;
+      top: 8.5vw;
+      right: 0.5vw;
       rotate: -60deg;
       transform-origin: right top;
     }

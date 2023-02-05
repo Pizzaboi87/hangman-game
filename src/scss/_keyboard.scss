@@ -1,15 +1,14 @@
 .keyboard-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-  gap: 0.5rem;
-  width: 820px;
-  height: 180px;
+  grid-template-columns: repeat(auto-fit, minmax(5vw, 1fr));
+  gap: 0.5vw;
+  width: 55vw;
+  height: auto;
   background: linear-gradient(to right, gold, grey, rgb(116, 116, 234));
   align-items: center;
   justify-items: center;
-  border: 2px solid goldenrod;
-  padding-left: 10px;
-  padding-right: 10px;
+  border: 0.2vw solid goldenrod;
+  padding: 1vw;
 
   .active {
     background-color: hsl(100, 100%, 50%);
@@ -20,13 +19,13 @@
   }
 
   button {
-    width: 75px;
-    height: 40px;
+    width: 5vw;
+    height: auto;
     font-size: 2rem;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0.2vw 0.2vw 0.2vw black;
 
     &:hover:not(:disabled) {
       background: yellow;
