@@ -1,0 +1,32 @@
+@import 'gallows';
+@import 'settings';
+@import 'word';
+@import 'keyboard';
+
+.container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: center;
+
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    color: blue;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+
+    strong[data-res='lose'] {
+      color: red;
+    }
+
+    strong[data-res='win'] {
+      color: green;
+    }
+  }
+}

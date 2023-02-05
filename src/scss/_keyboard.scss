@@ -1,0 +1,35 @@
+.keyboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 0.5rem;
+  width: 820px;
+  height: 180px;
+  background: linear-gradient(to right, gold, grey, rgb(116, 116, 234));
+  align-items: center;
+  justify-items: center;
+  border: 2px solid goldenrod;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .active {
+    background-color: hsl(100, 100%, 50%);
+  }
+
+  .inactive {
+    opacity: 0.3;
+  }
+
+  button {
+    width: 75px;
+    height: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px black;
+
+    &:hover:not(:disabled) {
+      background: yellow;
+    }
+  }
+}
